@@ -84,15 +84,6 @@
     content: '🚀';
 }
 
-/* Scroll Bar */
-.slider {
-    position: absolute !important;
-    right: 1px !important;
-    width: 1px !important;
-    background: #bc9abc !important;
-    left: auto !important;
-}
-
 .codicon-toolbar-more, .codicon-word-wrap {
     display: block !important;
 }
@@ -113,38 +104,6 @@
     border: none !important;
     background: transparent !important;
 }
-
-/* Project Title */
-/*.titlebar-left {
-    justify-content: flex-start !important;
-    flex-grow: 0 !important;
-    width: auto !important;
-}*/
-
-/* Search Label */
-/*.search-label {
-    font-family: 'Geist Mono' !important;
-    font-size: 14px !important;
-    color: #fff;
-    display: block;
-}*/
-
-/* Search icon */
-/*.search-icon {
-    display: none !important;
-}
-
-.codicon-search::before {
-    display: none !important;
-}
-
-.codicon-arrow-right, .codicon-arrow-left {
-    display: none !important;
-}
-
-.titlebar-right > * {
-    display: none !important;
-}*/
 
 /* Command Palette */
 .quick-input-widget {
@@ -171,18 +130,6 @@
     background: none !important;
 }
 
-/* .monaco-list-row.focused {
-    background-color: rgb(181 198 228 / 25%) !important;
-} */
-
-/* .synthetic-focus {
-    outline-color: rgba(50, 50, 50, 1) !important;
-} */
-
-/* .quick-input-widget .monaco-label {
-    font-size: 11px !important;
-} */
-
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
     border-radius: 12px !important;
@@ -208,11 +155,6 @@
 .monaco-inputbox input::placeholder {
     color: rgba(255, 255, 255, .3) !important;
 }
-
-/* .monaco-workbench label {
-    color: #fff !important;
-    font-size: 14px !important;
-} */
 
 /* Container that holds the VS Code home icon. */
 .editor-group-watermark {

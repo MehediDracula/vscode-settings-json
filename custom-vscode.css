@@ -1,3 +1,7 @@
+*:not(.codicon) {
+    font-family: "DankMono-Italic", monospace !important;
+}
+
 /* Code comment style */
 .mtk3 {
     color: #008c7d !important;
@@ -12,32 +16,20 @@
 
 /* Code canvas top shadow */
 .monaco-editor .scroll-decoration {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .75) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .75) !important;
     top: -6px !important;
-}
-
-/* Toolbars when tabs are enabled. */
-.monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
-    display: none !important;
 }
 
 /* Side bar */
 .part.sidebar {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, .25);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .25);
 }
 
-/* File Explorer Selected Item */
-.monaco-list.list_id_1 .monaco-list-row.selected {
-    background-color: #4f5971 !important;
-    opacity: 1 !important;
-    border-top: 1px #727b90 solid;
-    border-bottom: 1px #727b90 solid;
-}
-
-/* List item label name */
-.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
-    color: #fff !important;
-    opacity: 1 !important;
+/* File Explorer Item Label */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row
+.monaco-icon-label .label-name {
+    font-size: 14px !important;
 }
 
 /* File explorer action buttons */
@@ -45,91 +37,48 @@
     display: none;
 }
 
-/* File Explorer Item Label */
-.monaco-tree .monaco-tree-row .label-name,
-.monaco-list .monaco-list-row
-.monaco-icon-label .label-name {
-    font-family: 'Geist Mono', monospace !important;
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    color: #FFF !important;
-}
-
 /* Sidebar top shadow */
 .monaco-scrollable-element>.shadow.top {
-    box-shadow: 0px 0px 10px rgba(0,0,0,.75) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,.75) !important;
     top: -3px !important;
 }
 
 /* Sidebar title */
-.composite.title {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-items: center !important;
-}
-.composite.title h2 {
-    font-weight: bold !important;
-    font-size: 12px !important;
-    text-transform: uppercase;
-    color: #bc9abc !important;
+.titlebar-right > * {
+    display: none !important;
 }
 
-.composite.title h2::before {
-    display: inline-block;
-    margin-right: 6px;
-    font-size: 1.1rem;
-    content: '🚀';
-}
-
-.codicon-toolbar-more, .codicon-word-wrap {
-    display: block !important;
+/* Terminal title */
+.monaco-workbench .pane-composite-part>.title>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item {
+    text-transform: none;
 }
 
 /* Tooltip box style */
 .monaco-editor-hover,
 .monaco-hover {
-    box-shadow: 0px 8px 32px rgba(0,0,0,.45) !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,.45) !important;
     padding: 10px !important;
-    background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
     backdrop-filter: blur(3px) !important;
     border-radius: 20px !important;
     border: none !important
-}
-
-/* Project title's style at the top. */
-.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
-    border: none !important;
-    background: transparent !important;
-}
-
-/* Command Palette */
-.quick-input-widget {
-    transform: translateY(-50%) !important;
-    top: 50% !important;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important;
-    padding: 10px 10px 18px 10px !important;
-/*    background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;*/
-    backdrop-filter: blur(3px) !important;
-    border-radius: 20px !important;
-}
-
-/* Remove background for lists */
-.monaco-list-rows {
-    background: transparent !important;
-}
-
-/* List hover */
-.monaco-list-row:hover {
-    background: rgba(0, 0, 0, .2) !important;
 }
 
 .notifications-toasts .monaco-list-row:hover {
     background: none !important;
 }
 
+/* Command Palette */
+/* .quick-input-widget {
+    transform: translateY(-50%) !important;
+    top: 50% !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .45) !important;
+    padding: 10px 10px 18px 10px !important;
+    backdrop-filter: blur(3px) !important;
+    border-radius: 20px !important;
+} */
+
 /* Command palette text input */
-.quick-input-filter .monaco-inputbox {
+/* .quick-input-filter .monaco-inputbox {
     border-radius: 12px !important;
     padding: 8px !important;
     border: none !important;
@@ -137,9 +86,9 @@
     font-family: "Geist Mono" !important;
     font-size: 14px !important;
     margin-bottom: 16px !important;
-}
+} */
 
-#command-blur {
+/* #command-blur {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -147,7 +96,7 @@
     top: 0;
     left: 0;
     backdrop-filter: blur(8px);
-}
+} */
 
 /* Command palette's input box placeholder. */
 .monaco-inputbox input::placeholder {
